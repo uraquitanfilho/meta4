@@ -1,6 +1,30 @@
 [Voltar para o menu](readme.md)
 # Criação de rúbricas
  <sup>Caminho: Configuração -> Cálculo -> Ficheiro -> ***Criar rúbricas***</sup>
+
+### Criação do campo no database
+> A primeira coisa a se pensar quando se vai criar uma rúbrica, é a criação do campo que irá armazenar o valor da rúbrica no banco de dados.
+1. Escolher uma tabela para criação do novo campo. Para isso temos uma lista de 3 tabelas que poderemos utilizar o bom senso de acordo com a quantidade de colunas que cada uma possua. Tender a escolher a que tiver menos campos Dentre:
+```sql 
+m4t_acumulado_rl
+m4t_acumulado_rl1
+m4t_acumulado_rl2
+
+--comando para criação do campo
+ALTER TABLE m4t_acumulado_rl2 ADD (novo_campo NUMERIC(14,4));
+--onde novo_campo é o nome do campo que deseja criar. 
+--este nome é importante para configurar a rúbrica.
+```
+2. Muito importante, não esqueça de atualizar a view m4_acumulado_rlx... 
+```sql
+--No exemplo em questão, foi utilizada a tabela m4t_acumulado_rl2
+create or replace view m4_acumulado_rl2 as
+select * from m4t_acumulado_rl2
+with check option;
+```
+3. Pronto, agora o próximo passo é acessar o meta4 para criação da rúbrica.
+<sup>Caminho: Configuração -> Cálculo -> Ficheiro -> ***Criar rúbricas***</sup>
+
 > Existem regras não obrigatórias porém, para melhor entendimento, se faz necessário por bom senso, as cumprir.
 ## Regras por natureza:
 1. Se bonus, deve-se adotar uma numeração abaixo de 5000
