@@ -1,3 +1,4 @@
+[Voltar para o menu](readme.md)
 # Criação de rúbricas
 > <sup>Caminho: Configuração -> Cálculo -> Ficheiro -> ***Criar rúbricas***</sup>
 > Existem regras não obrigatórias porém, para melhor entendimento, se faz necessário por bom senso, as cumprir.
@@ -16,3 +17,5 @@
 ```
 ### a respeito da #1433 (Rúbrica de cálculo) estas podem ir diretamente para o recibo. Com isso segue algumas regras:
 1. Se bonus, na ecrã de 
+
+[Voltar para o menu](readme.md)
