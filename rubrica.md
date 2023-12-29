@@ -29,14 +29,14 @@ with check option;
 ### A configurar o campo criado anteriormente
 1. Na ecrã de edição de rúbricas, criar em ***novo*** para criação da rúbrica.
 2. Na seção ***Tipo de saída*** temos:
- 2.1. ***Acumula para o acumulado*** - escolha entre 
+ 1. ***Acumula para o acumulado*** - escolha entre 
 ```
 CORTO se o campo foi criado na tabela m4t_acumulado_c
 LARGO se o campo foi criado na tabela m4t_acumulado_rl
 LARGO1 se o campo foi criado na tabela m4t_acumulado_rl1
 LARGO2 se o campo foi criado na tabela m4t_acumulado_rl2
 ```
- 2.2. Em ***Campo no acumulado***, escolher o campo criado.
+ 2. Em ***Campo no acumulado***, escolher o campo criado.
 
 > Existem regras não obrigatórias porém, para melhor entendimento, se faz necessário por bom senso, as cumprir.
 ## Regras por natureza:
@@ -66,15 +66,15 @@ Algumas vezes se faz necessário a criação de mais de 3.
 
 ### a respeito da #1433 (Rúbrica de cálculo) estas podem ir diretamente para o recibo. Com isso segue algumas regras:
 1. Se Abono, em ***Rúbricas de salário*** devemos:
- 1.1. Tipo Criação ***I***
- 1.2. Selecionar na opção de ***Classificação**** a opção **DV** 
- 1.3. Tipo da rúbrica: ***NÚmero*** 
- 1.4. Monetário (Selecionar)
+ 1. Tipo Criação ***I***
+ 2. Selecionar na opção de ***Classificação**** a opção **DV** 
+ 3. Tipo da rúbrica: ***NÚmero*** 
+ 4. Monetário (Selecionar)
 
 2. Na ecrã: ***Histórico de Normas***
- 2.1. Data de início: ***01/01/1994*** (Geralmente)
- 2.2. Data de fim: Geralmente não é necessário informar
- 2.3. ***Saída para totais*** selecionar:
+ 1. Data de início: ***01/01/1994*** (Geralmente)
+ 2. Data de fim: Geralmente não é necessário informar
+ 3. ***Saída para totais*** selecionar:
   * Abonos
   * Abonos cargo Empresa
   * I.R.S (Rúbricas Tributáveis)
@@ -82,20 +82,21 @@ Algumas vezes se faz necessário a criação de mais de 3.
   * S. Social Empresa
   * SS - Código de valor (CÓDIGO)
   * onde (CÓDIGO) pode ser (2, A B C D F H I N M O P R S T X)
- 2.4. Em ***Revisão*** 
-  * ***Cp,+prta,emtp e, Recálculo*** - geralmente se mantém a opção: ***Valor calculado*** (Depende da necessidade)
+
+ 4. Em ***Revisão*** 
+  * ***Comportamento em Recálculo*** - geralmente se mantém a opção: ***Valor calculado*** (Depende da necessidade)
   * ***Comportamento em Diferenças*** -  geralmente se mantém a opção: ***Diferença*** (Depende da necessidade)
- 2.5. Tipo de cálculo
+ 5. Tipo de cálculo
   * f(x) (fórmula) local onde se realizar a edição da fórmula (se necessário)
 
 ## Fazendo surgir no recibo.
 > Apenas criar e configurar corretamente uma rúbrica não a faz aparecer automaticamente na ecrã de recibos após um cálculo de processamento de salários. Para isso, deverá seguir o seguinte passo:
 1. Acessar: Base de Dados -> Processos -> Desenhador de linhas de cálculo
 2. Clicar no ícone de ***Abrir*** e selecionar ***CALCULATION*** clicar em (Base de Dados)
- 2.1. Unidades Informar a rúbrica de unidade (caso exista) exemplo: 1430
- 2.2. Preço Informar a rúbrica de preço (caso exista) exemplo: 1432
- 2.3. Rúbricas - Informar a descrição que deseja que apareça no recibo
- 2.4. Abonos Informar a rúbrica de abono. Exemplo 1433
+ 1. Unidades Informar a rúbrica de unidade (caso exista) exemplo: 1430
+ 2. Preço Informar a rúbrica de preço (caso exista) exemplo: 1432
+ 3. Rúbricas - Informar a descrição que deseja que apareça no recibo
+ 4. Abonos Informar a rúbrica de abono. Exemplo 1433
 > OBS: Se a rúbrica for de Retenção, então deve-se informar na coluna de retenção
 
 
