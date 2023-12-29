@@ -94,12 +94,12 @@ Algumas vezes se faz necessário a criação de mais de 3.
 ## Fazendo surgir no recibo.
 > Apenas criar e configurar corretamente uma rúbrica não a faz aparecer automaticamente na ecrã de recibos após um cálculo de processamento de salários. Para isso, deverá seguir o seguinte passo:
 
-1. Acessar: Base de Dados -> Processos -> Desenhador de linhas de cálculo
-2. Clicar no ícone de ***Abrir*** e selecionar ***CALCULATION*** clicar em (Base de Dados)
-  1. Unidades Informar a rúbrica de unidade (caso exista) exemplo: 1430
-  2. Preço Informar a rúbrica de preço (caso exista) exemplo: 1432
-  3. Rúbricas - Informar a descrição que deseja que apareça no recibo
-  4. Abonos Informar a rúbrica de abono. Exemplo 1433
+1. Acessar: <sup>Base de Dados -> Processos -> Desenhador de linhas de cálculo</sup>
+2. Clicar no ícone de **Abrir** e selecionar **CALCULATION** clicar em (Base de Dados)
+    1. Unidades: Informar a rúbrica de unidade (caso exista) exemplo: 1430
+    2. Preço: Informar a rúbrica de preço (caso exista) exemplo: 1432
+    3. Rúbricas - Informar a descrição que deseja que apareça no recibo
+    4. Abonos: Informar a rúbrica de abono. Exemplo: 1433
 
 > OBS: Se a rúbrica for de Retenção, então deve-se informar na coluna de retenção
 
