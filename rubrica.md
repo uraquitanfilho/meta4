@@ -4,8 +4,9 @@
 
 ### Criação do campo no database
 > A primeira coisa a se pensar quando se vai criar uma rúbrica, é a criação do campo que irá armazenar o valor da rúbrica no banco de dados.
-1. Escolher uma tabela para criação do novo campo. Para isso temos uma lista de 3 tabelas que poderemos utilizar o bom senso de acordo com a quantidade de colunas que cada uma possua. Tender a escolher a que tiver menos campos Dentre:
+1. Escolher uma tabela para criação do novo campo. Para isso temos uma lista de 4 tabelas que poderemos utilizar o bom senso de acordo com a quantidade de colunas que cada uma possua. Tender a escolher a que tiver menos campos Dentre:
 ```sql 
+m4t_acumulado_c
 m4t_acumulado_rl
 m4t_acumulado_rl1
 m4t_acumulado_rl2
@@ -24,6 +25,18 @@ with check option;
 ```
 3. Pronto, agora o próximo passo é acessar o meta4 para criação da rúbrica.
 <sup>Caminho: Configuração -> Cálculo -> Ficheiro -> ***Criar rúbricas***</sup>
+
+### A configurar o campo criado anteriormente
+1. Na ecrã de edição de rúbricas, criar em ***novo*** para criação da rúbrica.
+2. Na seção ***Tipo de saída*** temos:
+2.1. ***Acumula para o acumulado*** - escolha entre 
+```
+CORTO se o campo foi criado na tabela m4t_acumulado_c
+LARGO se o campo foi criado na tabela m4t_acumulado_rl
+LARGO1 se o campo foi criado na tabela m4t_acumulado_rl1
+LARGO2 se o campo foi criado na tabela m4t_acumulado_rl2
+```
+2.2. Em ***Campo no acumulado***, escolher o campo criado.
 
 > Existem regras não obrigatórias porém, para melhor entendimento, se faz necessário por bom senso, as cumprir.
 ## Regras por natureza:
